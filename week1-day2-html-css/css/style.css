@@ -1,0 +1,51 @@
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #efeee7;
+	font-size: 18px;
+}
+
+header {
+	background: #333;
+}
+
+h1 {
+	margin: 0;
+	margin-bottom: 15px;
+	padding: 15px 0;
+	text-align: center;
+	color: white;
+	font-size: 28px;
+}
+
+h2 {
+	font-size: 24px;
+}
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+#info,
+#img,
+#contact {
+	float: left;
+}
+
+#info {
+	width: 70%;
+}
+
+#contact {
+	width: 30%;
+}
+
+#img {
+	width: 200px;
+	height: 200px;
+	margin-right: 20px;
+}
+
+a {
+	color: red;
+}
