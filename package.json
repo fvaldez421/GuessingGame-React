@@ -9,7 +9,7 @@
   },
   "homepage": "https://fvaldez421.github.io/ReactGame/",
   "scripts": {
-    "predeploy": "yarn start",
+    "predeploy": "npm run build",
     "deploy": "react-scripts build && gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
