@@ -3,9 +3,8 @@ import React, { Component } from "react";
 import GifCard from "./components/GifCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import "./App.css";
 import gifs from "./components/characters.json";
-// import logo from './logo.svg';
+import "./App.css";
 
 
 let message = "";
@@ -21,7 +20,6 @@ class App extends Component {
   CheckState = id => {
   for (let i = 0; i < gifs.length; i++) {
     if (gifs[i].id === id && gifs[i].selected === true) {
-
       let addLoss = this.state.losses;
 
       addLoss++;
@@ -29,11 +27,8 @@ class App extends Component {
       console.log("Status checked, selected = " + gifs[i].selected );
 
     } else if (gifs[i].id === id && gifs[i].selected === false) {
-
-      // let addWin = this.state.wins;
       let UpdatedGifs = this.state.gifs;
 
-      // addWin++;
       for (let i = 0; i < gifs.length; i++) {
         if (gifs[i].id === id) {
           gifs[i].selected = true;
@@ -66,7 +61,7 @@ class App extends Component {
         losses={this.state.losses}
         message={this.state.message}
         >
-        Gif Game
+        Guessing Game
         </Title>
         {this.state.gifs.map(gif => (
           <GifCard
